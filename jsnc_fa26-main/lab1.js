@@ -14,7 +14,7 @@ if (isActive) {
   console.log("hoat dong ", isActive);
 }
 
-// tham trị, tham chiếu, địa chỉ bộ nhớ máy tính
+
 name = "hoadv21";
 age = 40;
 const a = 10;
