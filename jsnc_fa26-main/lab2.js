@@ -71,3 +71,35 @@ for (let i = 0; i < students.length; i++) {
 for (let i = 0; i < students.length; i++) {
     console.log(students[i].name);
 }
+
+
+//Bài tổng hợp:
+const products = [
+    {
+        id: 1,
+        name: "iPhone 15",
+        price: 20000000
+    },
+    {
+        id: 2,
+        name: "Samsung Galaxy S24",
+        price: 18000000
+    },
+    {
+        id: 3,
+        name: "Xiaomi 14",
+        price: 12000000
+    }
+];
+
+console.log(products);
+
+let total = 0;
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i].name + " - " + products[i].price);
+
+    total += products[i].price;
+}
+
+console.log("Tổng giá: " + total);
