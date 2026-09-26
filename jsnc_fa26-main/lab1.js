@@ -32,3 +32,21 @@ function sayHello() {
 
 sayHello();
 
+function sayHi(name) {
+  console.log(name);
+}
+sayHi("datnt");
+
+function sum(a, b) {
+  return a + b;
+  console.log("aaa");
+  if(a){
+    console.log(a);
+  }
+  console.log(b);
+}
+sum(3, 4);
+
+//return: tra ve sau return
+//return: ket thuc function
+
