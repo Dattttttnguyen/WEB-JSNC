@@ -28,3 +28,37 @@ axios.get("http://localhost:3000/students").then((res) => {
     )
     .join("");
 });
+
+
+
+axios.get("http://localhost:3000/products")
+    .then(function (response) {
+
+        const products = response.data;
+
+        let html = "";
+
+        products.map(function (product, index) {
+
+            html += `
+                <tr>
+                    <td>${index + 1}</td>
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.price.toLocaleString("vi-VN")} VNĐ</td>
+                    <td>${product.category}</td>
+                    <td>
+                        <button>Sửa</button>
+                        <button>Xóa</button>
+                    </td>
+                </tr>
+            `;
+
+        });
+
+        document.getElementById("productList").innerHTML = html;
+
+    })
+    .catch(function (error) {
+        console.log("Có lỗi:", error);
+    });
